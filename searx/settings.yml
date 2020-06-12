@@ -1,6 +1,6 @@
 general:
     debug : False # Debug mode, only for development
-    instance_name : "searx" # displayed name
+    instance_name : "Luke's searx" # displayed name
 
 search:
     safe_search : 0 # Filter results. 0: None, 1: Moderate, 2: Strict
@@ -23,7 +23,7 @@ ui:
     default_theme : oscar # ui theme
     default_locale : "" # Default interface locale - leave blank to detect from browser information or use codes from the 'locales' config section
     theme_args :
-        oscar_style : logicodev # default style of oscar
+        oscar_style : logicodev-dark # default style of oscar
 #   categories_order :
 #     - general
 #     - files
@@ -201,13 +201,11 @@ engines:
   - name : duckduckgo
     engine : duckduckgo
     shortcut : ddg
-    disabled : True
 
   - name : duckduckgo images
     engine : duckduckgo_images
     shortcut : ddi
     timeout: 3.0
-    disabled : True
 
   - name : etools
     engine : etools
@@ -269,8 +267,8 @@ engines:
   - name : gigablast
     engine : gigablast
     shortcut : gb
+    disabled : True
     timeout : 3.0
-    disabled: True
 
   - name : gentoo
     engine : gentoo
@@ -287,7 +285,6 @@ engines:
     categories : it
     shortcut : gl
     timeout : 10.0
-    disabled : True
 
   - name : github
     engine : github
@@ -296,6 +293,7 @@ engines:
   - name : google
     engine : google
     shortcut : go
+    disabled : True
 
   - name : google images
     engine : google_images
@@ -304,6 +302,7 @@ engines:
   - name : google news
     engine : google_news
     shortcut : gon
+    disabled : True
 
   - name : google videos
     engine : google_videos
@@ -522,7 +521,7 @@ engines:
   - name : piratebay
     engine : piratebay
     shortcut : tpb
-    url: https://pirateproxy.red/
+    url : https://pirateproxy.krd
     timeout : 3.0
 
   - name : pubmed
@@ -535,7 +534,6 @@ engines:
     engine : qwant
     shortcut : qw
     categories : general
-    disabled : True
 
   - name : qwant images
     engine : qwant
@@ -617,7 +615,6 @@ engines:
     engine : startpage
     shortcut : sp
     timeout : 6.0
-    disabled : True
 
   - name : tokyotoshokan
     engine : tokyotoshokan
@@ -653,7 +650,6 @@ engines:
 
   - name : unsplash
     engine : unsplash
-    disabled: True
     shortcut : us
 
   - name : yahoo
@@ -664,7 +660,6 @@ engines:
   - name : yandex
     engine : yandex
     shortcut : yn
-    disabled : True
 
   - name : yahoo news
     engine : yahoo_news
